@@ -15,4 +15,4 @@ __pycache__
 **/*.pdf
 **/*.svg
 
-testing.py
+!/example_data/example_*
