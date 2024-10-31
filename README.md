@@ -7,7 +7,7 @@ The main script to initialize a model and dataset, train the model, and explain 
 
 ## Setting up
 
-Please see the `requirements.txt` file to find dependencies. Note that a custom (publicly-available) implementation of Pytorch Geometric for heterogeneous explanations is required and can be found here: [https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain-paper](https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain-paper). This explanation code has been submitted as a pull request to Pytorch Geometric and is pending a minor rewrite before being merged into the main codebase (the PR version is at a different branch, https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain, though to reproduce the paper, you should use the above version).
+Please see the `requirements.txt` file to find dependencies. Note that a custom (publicly-available) implementation of Pytorch Geometric for heterogeneous explanations is required and can be found here: [https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain-paper](https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain-paper). This explanation code has been submitted as a pull request to Pytorch Geometric and is pending a minor rewrite before being merged into the main codebase (the PR version is at a different branch, [https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain](https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain), though to reproduce the paper, you should use the above version).
 
 
 ## Running the code
@@ -25,7 +25,7 @@ Note that this toy dataset won't really produce any meaningful outputs due to th
 
 ### ADSP Dataset
 
-Note that this repository does NOT include the processed ADSP data, as this dataset is only available by approval through the Data Sharing Service of the National Institute on Aging and we are unable to redistribute it. If the required data is placed into a `data/adsp` folder, then this script can be run directly. We are happy to provide the code that we used to process the ADSP dataset into the form replicated by the toy dataset above if .
+Note that this repository does NOT include the processed ADSP data, as this dataset is only available by approval through the Data Sharing Service of the National Institute on Aging and we are unable to redistribute it. If the required data is placed into a `data/adsp` folder, then this script can be run directly. We are happy to provide the code that we used to process the ADSP dataset into the form mocked-up by the toy dataset above if one can provide their ADSP project approval (as the conversion code does include metadata that we are not allowed to redistribute).
 
 All of the arguments to run `main_gnn.py` are documented close to the bottom of this script, on lines 370-600. An example command to train a GNN from scratch is:
 
