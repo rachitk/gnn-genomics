@@ -85,7 +85,7 @@ def model_evaluation(model, device, eval_data, loss_fn=None, coerce_binary=False
 
                 total_loss += loss.item()
 
-        if(loss_fn is not None):
+        if(loss_fn is not None and i > 0):
             eval_metric_dict['val_loss'] = total_loss / i
 
         keys = batch_metric_dicts_list[0].keys()
@@ -276,7 +276,7 @@ def training_loop(model, device, lr, epochs, train_data, val_data=None, label_we
 
             # If validation data was passed, do validation here (evaluate on validation data)
             if(do_val):
-                metric_dict = model_evaluation(model, device, val_data, loss_fn=loss_func, 
+                metric_dict, _, _ = model_evaluation(model, device, val_data, loss_fn=loss_func, 
                                                coerce_binary=coerce_binary, verbose=verbose)
 
                 pbar_epoch.set_postfix(train_loss='{:.4f}'.format(np.mean(losses)), **metric_dict)
