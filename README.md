@@ -7,7 +7,7 @@ The main script to initialize a model and dataset, train the model, and explain 
 
 ## Setting up
 
-Please see the `requirements.txt` file to find dependencies. Note that a custom (publicly-available) implementation of Pytorch Geometric for heterogeneous explanations is required and can be found here: https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain. This explanation code has been submitted as a pull request to Pytorch Geometric and is pending a minor rewrite before being merged into the main codebase.
+Please see the `requirements.txt` file to find dependencies. Note that a custom (publicly-available) implementation of Pytorch Geometric for heterogeneous explanations is required and can be found here: [https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain-paper](https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain-paper). This explanation code has been submitted as a pull request to Pytorch Geometric and is pending a minor rewrite before being merged into the main codebase (the PR version is at a different branch, https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain, though to reproduce the paper, you should use the above version).
 
 
 ## Running the code
