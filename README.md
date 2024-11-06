@@ -7,7 +7,24 @@ The main script to initialize a model and dataset, train the model, and explain 
 
 ## Setting up
 
-Please see the `requirements.txt` file to find dependencies. Note that a custom (publicly-available) implementation of Pytorch Geometric for heterogeneous explanations is required and can be found here: [https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain-paper](https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain-paper). This explanation code has been submitted as a pull request to Pytorch Geometric and is pending a minor rewrite before being merged into the main codebase (the PR version is at a different branch, [https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain](https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain), though to reproduce the paper, you should use the above version).
+You should first clone the repository and enter it:
+
+```
+git clone https://github.com/rachitk/gnn-genomics
+cd gnn-genomics
+```
+
+To install dependencies, make sure you are using a Python version between 3.8 and 3.11; you can then run the following command (we recommend you run this in a virtual environment or Conda environment):
+
+```
+pip install -r requirements.txt
+```
+
+Please see the `requirements.txt` file to find a list of dependencies.
+
+Note that a custom (publicly-available) implementation of Pytorch Geometric for heterogeneous explanations is required and can be found here: [https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain-paper](https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain-paper). This explanation code has been submitted as a pull request to Pytorch Geometric and is pending a minor rewrite before being merged into the main codebase (the PR version is at a different branch, [https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain](https://github.com/rachitk/pytorch_geometric/tree/het-captum-explain), though to reproduce the paper, you should use the above version).
+
+Note that most of the versions are pinned in part due to the dependency on the above custom version of Pytorch Geometric, though newer versions of several dependencies should work once the Pytorch Geometric pull request is accepted (as a newer version of Pytorch and Pytorch Geometric can be used after that).
 
 
 ## Running the code
